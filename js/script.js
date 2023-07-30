@@ -20,3 +20,10 @@
     window.open(buyLink, '_blank');
   });
 
+
+  // function playAnimation(element) {
+  //   element.classList.add('key-pressed');
+  //   setTimeout(() => {
+  //     element.classList.remove('key-pressed');
+  //   }, 100); 
+  // }

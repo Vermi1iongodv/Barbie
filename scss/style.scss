@@ -71,6 +71,11 @@ h2 {
 }
 }
 
+// .key-pressed {
+//   transform: scale(0.95); 
+//   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+// }
+
 .nav-link {
   color: $pink;
   font-size: 30px;
@@ -240,23 +245,23 @@ h2 {
 
 
 .stage1 {
-  top: 15%;
+  top: 10%;
   left: 0;
-  right: 40%;
+  right: 50%;
   bottom: 0;
   color: white;
 }
 .stage2 {
-  top: 37%;
-  left: 40%;
+  top: 35%;
+  left: 45%;
   right: 0;
   bottom: 0;
   color: white;
 }
 .stage3 {
-  top: 62%;
+  top: 60%;
   left: 0;
-  right: 40%;
+  right: 45%;
   bottom: 0;
   color: white;
 }
