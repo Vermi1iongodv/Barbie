@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/cs20bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,17 +28,17 @@
               </a>
             </li>
             <li class="nav-item d-inline-block">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#token-info">
                 Tocenomics
               </a>
             </li>
             <li class="nav-item d-inline-block">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#buy">
                 How to buy
               </a>
             </li>
             <li class="nav-item d-inline-block">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#roadmap">
                 Roadmap
               </a>
             </li>
@@ -96,23 +96,26 @@
 
 
   <div class="container-fluid">
-    <div class="second-content d-flex align-center flex-column py-10">
+    <div class="second-content d-flex align-center flex-column py-10" id="buy">
       <h2>
         Why Barbie token?
       </h2> 
-      <div class="d-flex justify-space-between">
+      <div class="py-12 ">
 
-        <img src="./images/icons 3/heart_00000.png" alt="icon" class="icon-item mx-5 ml-4">
-        <img src="./images/icons 3/peoples_00000.png" alt="icon" class="icon-item mx-5">
-        <img src="./images/icons 3/money_00000.png" alt="icon" class="icon-item mx-3">
-        <img src="./images/icons 3/bch_00000.png" alt="iconicon" class="icon-item mx-2">
-    </div>
-      <div class="d-flex justify-space-between">
-        
-        <div class="mx-11 opt-item">social</div>
-        <div class="mx-7 opt-item">community</div>
-        <div class="mx-9 opt-item">profit</div>
-        <div class="mx-11 opt-item">secure</div>
+        <div class="d-flex justify-space-between icon-block">
+          
+          <img src="./images/icons 3/heart_00000.png" alt="icon" class="icon-item mx-20">
+          <img src="./images/icons 3/peoples_00000.png" alt="icon" class="icon-item mx-20">
+          <img src="./images/icons 3/money_00000.png" alt="icon" class="icon-item mx-20">
+          <img src="./images/icons 3/bch_00000.png" alt="icon" class="icon-item mx-20">
+      </div>
+        <div class="d-flex justify-space-between pr-8 pb-20">
+          
+          <div class="opt-item mx-17">Social</div>
+          <div class="opt-item mx-17">Community</div>
+          <div class=" opt-item mx-17 ml-12">Profit</div>
+          <div class="opt-item mx-17 ml-16">Secure</div>
+        </div>
       </div>
     </div>
   </div>
@@ -120,17 +123,17 @@
 
   <div class="container-fluid position-relative">
     
-    <img src="./images/newImg/3_00000.png" alt="img" class="intro2">
+    <img src="./images/newImg/8_00000.png" alt="img" class="intro2">
 
 
-    <div class="third-content position-absolute">
+    <div class="third-content position-absolute" id="token-info">
       
      
 
       
       
       
-      <div class="text-container text-align-right py-10 px-10">
+      <div class="text-container text-align-right py-20 px-10">
           <h2 class="title-third text-align-right ml-20">
             Barbie Tokenomics
           </h2>
@@ -156,20 +159,21 @@
 
   <div class="container-fluid">
     
-      <h2 class="d-flex justify-center py-10">How to buy Barbie?</h2>
-      <div class="d-flex justify-space-around align-center pb-20">
-        <div class="flex-row text-align-center pb-15">
+      <h2 class="d-flex justify-center pt-5">How to buy Barbie?</h2>
+      <div class="d-flex justify-space-around  ">
+        <div class="flex-row text-align-center py-20 ">
           
           
           <div class="col fourth-content" onclick="playAnimation(this)">
             <div class="d-flex justify-space-between">
 
-              <div class="text-align-left mr-5 fourth-num">
-                1
-              </div>
-              <div class="fourth-text">
+              <div class="text-align-left fourth-num">
+                <span class="mr-3">
+                  1
+                </span>
                 Connect your wallet
               </div>
+              
             </div>
             
           </div>
@@ -177,10 +181,10 @@
           onclick="playAnimation(this)">
             <div class="d-flex justify-space-between">
 
-              <div class="text-align-left mr-5 fourth-num">
-                2
-              </div>
-              <div class="fourth-text">
+              <div class="text-align-left fourth-num">
+                <span class="mr-3">
+                  2
+                </span>
                 Adding Barbie Token To Exchange
               </div>
             </div>
@@ -190,11 +194,11 @@
           onclick="playAnimation(this)">
             <div class="d-flex justify-space-between">
 
-              <div class="text-align-left mr-5 fourth-num">
-                3
-              </div>
-              <div class="fourth-text">
-                Setting slippage tolerance(20%)
+              <div class="text-align-left fourth-num">
+                <span class="mr-3">
+                  3
+                </span>
+                Setting slippage tolerance (20%)
               </div>
             </div>
             
@@ -203,25 +207,31 @@
           onclick="playAnimation(this)">
             <div class="d-flex justify-space-between">
 
-              <div class="text-align-left mr-5 fourth-num">
-                4
-              </div>
-              <div class="fourth-text">
+              <div class="text-align-left fourth-num">
+                <span class="mr-3">
+                  4
+                </span>
                 Finalizing swap
               </div>
             </div>
             
           </div>
           
-        </div>
-        <div>
-          <!-- <a href="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x19EF6e5FBb5962a14b506dD163d50bEb915CF759" target="_blank">
+          <div class="my-6">
 
-          </a> -->
-          <button type="button" class="btn-third mb-10 px-5" id="buyButton3">
-            Buy <br> Barbie
-          </button>
+            <button type="button" class="btn-third px-4 py-3" id="buyButton3">
+              Buy  Barbie
+            </button>
+          </div>
         </div>
+        
+        <div class="pt-10">
+
+          <video style="object-fit: cover; background-size: cover; width: 400px; height: 500px" preload="auto"
+                       playsinline autoplay loop muted>
+                    <source src="./video/Marketing.mp4" type="video/mp4">
+                </video>
+        </div> 
       </div>
 
 
@@ -229,7 +239,7 @@
   </div>
 
   <div class="container-fluid">
-    <div class="last-content">
+    <div class="last-content" id="roadmap">
       <div class="d-flex justify-center align-center last-title py-15">ROADMAP
 
       </div>
