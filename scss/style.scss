@@ -115,18 +115,29 @@ h2 {
 .title {
   line-height: 1;
 }
-
-
-
-.intro {
-  width: 100%;
-  background-size: cover;
-  background-position: center center;
+.first-content {
+  grid-area: contentBox;
 }
+
+
+.intro1 {
+  background-image: url(/images/1\ block_00000.png);
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: [row1-start] 28% [row1-end]  auto [last-line];
+  grid-template-areas:
+    ". ."
+    "contentBox .";
+
+}
+
 .intro2 {
-  width: 100%;
-  background-size: cover;
-  background-position: center center;
+  background-image: url(/images/newImg/8_00000.png);
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .btn {
   border-radius: 10px;
@@ -159,12 +170,7 @@ h2 {
   color: white;
   line-height: 1.1;
 }
-.first-content {
-  top: 25%;
-  left: 0;
-  right: 35%;
-  bottom: 0;
-}
+
 .third-content {
   top: 0;
   left: 0;
@@ -186,6 +192,17 @@ h2 {
   font-size: 32px;
   color: $pink;
 }
+
+.card-container {
+  gap: 80px;
+}
+// .card-block {
+//   margin-right: 80px;
+
+//   &:last-child {
+//     margin-right: 80px;
+//   }
+// }
 
 
 .title-third {
@@ -267,4 +284,26 @@ h2 {
   right: 45%;
   bottom: 0;
   color: white;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .intro1 img {
+     
+      height: auto; 
+
+    }
+  .first-content {
+    top: 15%;
+    left: 0;
+    right: 40%;
+    bottom: 0;
+  }
+
+  .main-title {
+    font-size: 40px;
+    margin-top: 10px;
+  }
 }
