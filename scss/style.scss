@@ -65,6 +65,7 @@ h2 {
 }
 .nav {
   text-transform: uppercase;
+
   .active {
     color: $beige;
     
@@ -72,6 +73,10 @@ h2 {
       opacity: 1;
     }
 }
+}
+
+.nav-content {
+  gap: 50px;
 }
 
 // .key-pressed {
@@ -84,6 +89,7 @@ h2 {
   font-size: 30px;
   vertical-align: top;
   transition: color .2s ease-in;
+  white-space: nowrap;
 
   &:after {
     content: "";
@@ -106,12 +112,38 @@ h2 {
   }
 }
 
-.nav-content {
-  margin-right: 30px;
 
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 20px; /* Adjust font size for better mobile readability */
+  }
 
-  
+  .container-fluid {
+    padding: 20px; /* Add some padding to the container on mobile */
+  }
+
+  .nav {
+    flex-direction: column; /* Stack navigation items vertically on mobile */
+  }
+
+  .nav-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    font-size: 22px; /* Adjust font size for navigation links on mobile */
+  }
+
+  /* Add any additional styles or adjustments you need for mobile here */
 }
+
+
+
+
+
+
+
 .title {
   line-height: 1;
 }
@@ -122,6 +154,7 @@ h2 {
 
 .intro1 {
   background-image: url(/images/1\ block_00000.png);
+  background-size: cover;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -130,15 +163,18 @@ h2 {
     ". ."
     "contentBox .";
 
+
 }
 
 .intro2 {
   background-image: url(/images/newImg/8_00000.png);
+  background-size: cover;
   height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .btn {
   border-radius: 10px;
   background-color: $pink;
@@ -288,22 +324,37 @@ h2 {
 
 
 
-@media (max-width: 768px) {
-
-    .intro1 img {
-     
-      height: auto; 
-
-    }
-  .first-content {
-    top: 15%;
-    left: 0;
-    right: 40%;
-    bottom: 0;
+@media screen and (max-width: 767px) {
+  .intro1 {
+    background-size: 767px; /* Adjust background size for mobile */
+    background-repeat: no-repeat;
+    height: 450px;
+    grid-template-columns: repeat(4 ,1fr); /* Change grid layout to single column on mobile */
+    grid-template-rows: [row1-start] 100% [row1-end] auto [last-line];
+    grid-template-areas:
+    
+    ". contentBox .";
+    align-items: center;
+    
   }
-
+  
   .main-title {
-    font-size: 40px;
-    margin-top: 10px;
+    font-size: 40px; /* Adjust the font size for the main title on mobile */
   }
+
+  .btn-second {
+    font-size: 20px; /* Adjust the font size for the button on mobile */
+  }
+
+
+  .second-content {
+    padding: 20px; /* Add some padding to the container on mobile */
+  }
+
+  .opt-item {
+    font-size: 18px; /* Adjust the font size for the option text on mobile */
+  }
+
+
+  /* Add any additional styles or adjustments you need for mobile here */
 }
