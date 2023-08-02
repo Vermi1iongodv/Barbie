@@ -12,9 +12,8 @@ html {
 body {
   transition: color 0.5s;
   line-height: 1.5;
-  font-size: 25px;
   font-family: 'Poppins', sans-serif;
- 
+  overflow-x: hidden;
 }
 
 *,
@@ -57,8 +56,7 @@ button:focus {
 html body {
   height: 100vh;
 }
-
-h2 {
+.second-title {
   font-size: 45px;
   color: $pink;
   
@@ -76,7 +74,12 @@ h2 {
 }
 
 .nav-content {
-  gap: 50px;
+  
+  gap: 100px;
+}
+.video-content {
+  width: 300px;
+  height: 400px;
 }
 
 // .key-pressed {
@@ -86,7 +89,7 @@ h2 {
 
 .nav-link {
   color: $pink;
-  font-size: 30px;
+  font-size: 25px;
   vertical-align: top;
   transition: color .2s ease-in;
   white-space: nowrap;
@@ -118,9 +121,7 @@ h2 {
     font-size: 20px; /* Adjust font size for better mobile readability */
   }
 
-  .container-fluid {
-    padding: 20px; /* Add some padding to the container on mobile */
-  }
+  
 
   .nav {
     flex-direction: column; /* Stack navigation items vertically on mobile */
@@ -129,11 +130,18 @@ h2 {
   .nav-content {
     flex-direction: column;
     align-items: center;
+    gap: 80px;
   }
 
   .nav-link {
-    font-size: 22px; /* Adjust font size for navigation links on mobile */
+    font-size: 22px;
+
   }
+
+  .btn {
+    font-size: 25px;
+  }
+  
 
   /* Add any additional styles or adjustments you need for mobile here */
 }
@@ -231,6 +239,7 @@ h2 {
 
 .card-container {
   gap: 80px;
+ 
 }
 // .card-block {
 //   margin-right: 80px;
@@ -338,6 +347,27 @@ h2 {
     
   }
   
+  .intro2 {
+    background-size: 767px;
+    height: 450px;
+    background-repeat: no-repeat;
+
+  }
+
+  .third-title {
+    font-size: 22px;
+    
+  }
+
+ 
+  .title-third {
+    font-size: 30px;
+    margin-bottom: -15px;
+  }
+  .third-text {
+    font-size: 15px;
+  }
+  
   .main-title {
     font-size: 40px; /* Adjust the font size for the main title on mobile */
   }
@@ -347,14 +377,58 @@ h2 {
   }
 
 
-  .second-content {
-    padding: 20px; /* Add some padding to the container on mobile */
-  }
+  
 
   .opt-item {
-    font-size: 18px; /* Adjust the font size for the option text on mobile */
+    font-size: 20px; /* Adjust the font size for the option text on mobile */
   }
 
+  .second-title {
+    font-size: 30px;
+  }
 
+  .video-content {
+    width: 300px;
+    height: 400px;
+  }
+
+  .fourth-num {
+    font-size: 15px;
+  }
+
+  .btn-third {
+    font-size: 25px;
+  }
+  .title-fourth {
+    color: $pink;
+    font-size: 30px;
+  }
+
+  .final-img {
+    height: 400px;
+    width: 350px;
+  };
+  .last-title {
+    font-size: 35px;
+  }
+
+  .footer-title {
+    font-size: 30px;
+  }
+  .year {
+    font-size: 30px;
+  }
+  .pix {
+    font-size: 18px;
+  }
+  .stage1 {
+    top: 9%;
+  }
+  .stage2 {
+    top: 30%;
+  }
+  .stage3 {
+    top: 60%;
+  }
   /* Add any additional styles or adjustments you need for mobile here */
 }
