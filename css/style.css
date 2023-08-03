@@ -7330,7 +7330,7 @@ html body {
     background-size: 767px; /* Adjust background size for mobile */
     background-repeat: no-repeat;
     height: 450px;
-    grid-template-columns: repeat(4, 1fr); /* Change grid layout to single column on mobile */
+    grid-template-columns: repeat(5, 1fr); /* Change grid layout to single column on mobile */
     grid-template-rows: [row1-start] 100% [row1-end] auto [last-line];
     grid-template-areas: ". contentBox .";
     align-items: center;
@@ -7360,7 +7360,7 @@ html body {
     font-size: 20px; /* Adjust the font size for the option text on mobile */
   }
   .second-title {
-    font-size: 30px;
+    font-size: 35px;
   }
   .video-content {
     width: 300px;
@@ -7402,6 +7402,148 @@ html body {
     top: 60%;
   }
   /* Add any additional styles or adjustments you need for mobile here */
+}
+/* Your default styles for larger screens (desktop) */
+/* Apply any styles for larger screens here */
+/* Media query for iPhone 8 Plus (resolution: 1080 x 1920 pixels) */
+@media screen and (max-width: 414px) {
+  body {
+    font-size: 18px;
+  }
+  .nav {
+    flex-direction: column;
+  }
+  .nav-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 18px;
+    padding: 0 12px;
+  }
+  .intro1 {
+    background-size: 100%; /* Adjust background size for mobile */
+    background-repeat: no-repeat;
+    height: 230px;
+    grid-template-columns: repeat(5, 1fr); /* Change grid layout to single column on mobile */
+    grid-template-rows: [row1-start] 110% [row1-end] auto [last-line];
+    grid-template-areas: ". contentBox .";
+    align-items: center;
+  }
+  .intro2 {
+    background-size: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+  }
+  .title-third {
+    font-size: 20px;
+    padding-bottom: 5%;
+  }
+  .text-container {
+    padding-bottom: 0px;
+  }
+  .third-blockText {
+    margin: 0 0 7% 0 !important;
+  }
+  .third-title {
+    font-size: 12px;
+    margin: 8px 0 !important;
+  }
+  .third-text {
+    font-size: 10px;
+    margin: -1% 0 !important;
+  }
+  .main-title {
+    font-size: 23px;
+  }
+  .btn-second {
+    font-size: 12px;
+  }
+  .second-title {
+    font-size: 23px; /* Adjust font size for better mobile readability */
+  }
+  .opt-item {
+    font-size: 16px;
+  }
+  .second-content {
+    padding: 24px 0 !important;
+  }
+  .card-container {
+    flex-direction: column; /* Stack cards vertically on mobile */
+    gap: 30px;
+    padding: 18px 0 !important; /* Add some spacing between cards on mobile */
+  }
+  .card-block {
+    width: 100%; /* Make cards full-width on mobile */
+  }
+  .icon-item {
+    width: 70px;
+    height: 70px; /* Adjust icon size for mobile */
+  }
+  .title-fourth {
+    font-size: 23px;
+    padding-top: 36px !important;
+  }
+  .video-content {
+    width: 200px;
+    height: 250px;
+  }
+  .fourth-content {
+    padding: 15px 10px;
+    flex-basis: calc(50% - 10px);
+  }
+  .fourth-num {
+    font-size: 8px;
+  }
+  .btn-third {
+    font-size: 15px;
+  }
+  .fourth-box {
+    padding: 48px 0 !important;
+  }
+  .btn-thirdBox {
+    margin: 12px 0 !important;
+  }
+  .video-box {
+    padding-top: 24px !important;
+  }
+  .last-title {
+    font-size: 23px;
+    padding: 40px 0 28px 0 !important;
+  }
+  .final-img {
+    width: 100%;
+    height: 300px;
+  }
+  .pix {
+    font-size: 10px;
+  }
+  .last-contentBox {
+    padding-bottom: 28px !important;
+  }
+  .footer-title {
+    font-size: 23px;
+    padding-bottom: 15px;
+  }
+  .year {
+    font-size: 23px;
+  }
+  .stage1 {
+    top: 17%;
+    left: -10%;
+  }
+  .stage2 {
+    top: 39%;
+    left: 50%;
+  }
+  .stage3 {
+    top: 65%;
+    left: -10%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
