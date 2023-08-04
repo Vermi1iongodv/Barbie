@@ -1,0 +1,65 @@
+@import "../helpers/scss/bootstrap.scss";
+@import "../helpers/scss/global-mixin.scss";
+@import "../helpers/scss/margin-padding-mixin.scss";
+
+
+$pink: #EF74AD;
+$beige: #d9abc0;
+$banana: #d6e2ef;
+
+
+body {
+
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+a,
+a:hover,
+a:focus,
+a:visited,
+a:active {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+button,
+button:focus {
+  outline: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  // background-color: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+
+
+html body {
+  height: 100vh;
+}
+.cardBox {
+  height: 100%;
+  background-color: $banana;
+}
+
+.imgCard {
+  height: 20%;
+  width: 100%;
+}

@@ -74,12 +74,13 @@ html body {
 }
 
 .nav-content {
-  
+  align-items: center;
   gap: 100px;
+  padding-left: 0px !important;
 }
 .video-content {
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 500px;
 }
 
 // .key-pressed {
@@ -132,6 +133,7 @@ html body {
     align-items: center;
     gap: 80px;
   }
+  
 
   .nav-link {
     font-size: 22px;
@@ -187,6 +189,7 @@ html body {
   border-radius: 10px;
   background-color: $pink;
   color: white;
+  font-size: 20px;
   
 }
 .btn-second {
@@ -208,19 +211,20 @@ html body {
   font-size: 30px;
   
 }
-
+.title-fourth {
+  color: $pink;
+  font-size: 35px;
+}
+.pix {
+  font-size: 25px;
+}
 .main-title {
   font-size: 80px;
   color: white;
   line-height: 1.1;
 }
 
-.third-content {
-  top: 0;
-  left: 0;
-  right: 5%;
-  bottom: 0;
-}
+
 
 .second-content {
   height: 100%;
@@ -261,6 +265,7 @@ html body {
 }
 .third-text {
   color: white;
+  font-size: 18px;
 }
 
 .fourth-content {
@@ -272,6 +277,7 @@ html body {
 
 .fourth-num {
   color: white;
+  font-size: 22px;
 }
 
 .fourth-text {
@@ -297,7 +303,10 @@ html body {
 }
 
 
-
+.logo {
+  width: 10%;
+  height: 100%;
+}
 .year {
   font-size: 35px;
   color: $pink;
@@ -306,19 +315,20 @@ html body {
 .footer-title {
   color: $pink;
   word-spacing: 20px;
+  font-size: 35px;
 }
 
 
 .stage1 {
   top: 10%;
   left: 0;
-  right: 50%;
+  right: 55%;
   bottom: 0;
   color: white;
 }
 .stage2 {
   top: 35%;
-  left: 45%;
+  left: 50%;
   right: 0;
   bottom: 0;
   color: white;
@@ -326,7 +336,7 @@ html body {
 .stage3 {
   top: 60%;
   left: 0;
-  right: 45%;
+  right: 50%;
   bottom: 0;
   color: white;
 }
@@ -352,6 +362,9 @@ html body {
     height: 450px;
     background-repeat: no-repeat;
 
+  }
+  .text-container {
+    padding-bottom: 0px !important;
   }
 
   .third-title {
@@ -458,6 +471,8 @@ html body {
     flex-direction: column;
     align-items: center;
     gap: 60px;
+    padding-left: 0 !important;
+    
   }
 
   .nav-link {
@@ -548,7 +563,7 @@ html body {
 
   .title-fourth {
     font-size: 23px;
-    padding-top: 36px !important;
+    padding-top: 16px !important;
   }
   .video-content {
     width: 200px;
@@ -566,7 +581,7 @@ html body {
     font-size: 15px;
   }
   .fourth-box {
-    padding: 48px 0 !important;
+    padding: 28px 0 !important;
   }
   .btn-thirdBox {
     margin: 12px 0 !important;
