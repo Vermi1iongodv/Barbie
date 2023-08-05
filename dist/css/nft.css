@@ -7089,12 +7089,94 @@ html body {
   height: 100vh;
 }
 
-.cardBox {
-  height: 100%;
-  background-color: #d6e2ef;
+.title {
+  text-transform: uppercase;
+  font-size: 40px;
 }
 
-.imgCard {
-  height: 20%;
-  width: 100%;
+.card-block {
+  height: 75vh;
+}
+
+.cardBlock-num {
+  gap: 25px;
+  flex-wrap: nowrap;
+}
+
+.card-box {
+  padding: 10px;
+  background-color: #d6e2ef;
+  border-radius: 20px;
+}
+
+.card-box2 {
+  padding: 10px;
+  background-color: #d6e2ef;
+  border-radius: 20px;
+}
+
+.card-box3 {
+  padding: 10px;
+  background-color: #d6e2ef;
+  border-radius: 20px;
+}
+
+.img-card {
+  height: auto;
+  width: 200px;
+  border-radius: 30px;
+}
+
+.card-title {
+  font-size: 20px;
+  color: #6c6e71;
+}
+
+.card-text {
+  font-size: 15px;
+  color: #6c6e71;
+}
+
+.card-btn {
+  background-color: #EF74AD;
+  border-radius: 10px;
+  font-size: 25px;
+  color: white;
+}
+
+.btn-link {
+  color: white;
+  font-size: 20px;
+}
+
+.black {
+  background-color: black;
+}
+
+.orange {
+  background-color: #e27028;
+}
+
+/* CSS */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: #EF74AD;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: #ff5c7a; /* A slightly lighter shade of pink on hover */
 }
