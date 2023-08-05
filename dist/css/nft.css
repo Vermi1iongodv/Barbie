@@ -7158,25 +7158,23 @@ html body {
 }
 
 /* CSS */
-.pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+.hyi {
+  color: #6c6e71;
 }
 
-.prev-btn,
-.next-btn {
-  background-color: #EF74AD;
-  border-radius: 10px;
-  font-size: 20px;
-  color: white;
-  margin: 0 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.pag-link {
+  font-size: 13px;
+  color: #6c6e71;
 }
 
-.prev-btn:hover,
-.next-btn:hover {
-  background-color: #ff5c7a; /* A slightly lighter shade of pink on hover */
+.pag-link:hover,
+.pag-link:focus,
+.pag-link:active,
+.pag-link:target {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.backlink {
+  color: #6c6e71;
 }

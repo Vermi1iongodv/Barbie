@@ -1,10 +1,24 @@
-// JavaScript
+const cardBlocks = document.querySelectorAll('.cardBlock-num');
+const paginationLinks = document.querySelectorAll('.pagination .pag-link');
+
+paginationLinks.forEach(link => {
+  // Проверяем, является ли ссылка текущей страницей
+  if (link.href === window.location.href) {
+    link.classList.add('active'); // Добавляем класс "active" для текущей страницы
+  }
+
+  link.addEventListener('click', (event) => {
+    event.preventDefault(); // Предотвращаем переход по ссылке
+
+    // Получаем адрес ссылки
+    const href = event.currentTarget.getAttribute('href');
+
+    // Переходим по ссылке
+    window.location.href = href;
+  });
+});
 
 const cardsPerPage = 16; // Number of cards per page
-const cardBlocks = document.querySelectorAll('.cardBlock-num');
-const prevButton = document.querySelector('.prev-btn');
-const nextButton = document.querySelector('.next-btn');
-
 let currentPage = 1;
 const numPages = Math.ceil(cardBlocks.length / cardsPerPage);
 
@@ -25,42 +39,14 @@ function showPage(page) {
   currentPage = page;
 }
 
-function showNextPage() {
-  showPage(currentPage + 1);
-}
-
-function showPrevPage() {
-  showPage(currentPage - 1);
-}
-
-prevButton.addEventListener('click', showPrevPage);
-nextButton.addEventListener('click', showNextPage);
-
 showPage(currentPage); // Show the first page initially
 
 
-// JavaScript (pagination.js)
 
-// Get the current page number from the URL
-function getCurrentPageNumber() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const pageParam = urlParams.get('page');
-  return pageParam ? parseInt(pageParam) : 1;
-}
 
-// Show the corresponding page based on the current page number
-function showCurrentPage() {
-  const currentPage = getCurrentPageNumber();
-  const allPages = document.querySelectorAll('.pagination-page');
-  allPages.forEach((page) => {
-    if (page.dataset.page == currentPage) {
-      page.style.display = 'block';
-    } else {
-      page.style.display = 'none';
-    }
-  });
-}
 
-document.addEventListener('DOMContentLoaded', () => {
-  showCurrentPage();
-});
+
+
+
+
+
