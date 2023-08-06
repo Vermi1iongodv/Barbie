@@ -145,19 +145,19 @@ html body {
   font-size: 13px;
   color: $asphalt;
   
-
+  &:hover {
+    color: black;
+    border-bottom: 2px solid black;
+  }
  
 
 }
 
-.pag-link:hover,
-.pag-link:focus,
-.pag-link:active,
-.pag-link:target {
+
+.pag-link.active {
   color: black;
   border-bottom: 2px solid black;
 }
-
 
 .backlink {
   color: $asphalt;
