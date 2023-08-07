@@ -7112,13 +7112,16 @@ html body {
 
 .nav-content {
   align-items: center;
-  gap: 80px;
   padding-left: 0px !important;
 }
 
 .video-content {
   width: 400px;
   height: 500px;
+}
+
+.final-img {
+  width: 100%;
 }
 
 .nav-link {
@@ -7158,6 +7161,7 @@ html body {
   background-image: url(/images/1\ block_00000.png);
   background-size: cover;
   height: 100%;
+  background-repeat: no-repeat;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: [row1-start] 28% [row1-end] auto [last-line];
@@ -7227,10 +7231,6 @@ html body {
 .opt-item {
   font-size: 32px;
   color: #EF74AD;
-}
-
-.card-container {
-  gap: 80px;
 }
 
 .title-third {
@@ -7559,5 +7559,3 @@ html body {
     left: -10%;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

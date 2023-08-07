@@ -75,14 +75,16 @@ html body {
 
 .nav-content {
   align-items: center;
-  gap: 80px;
+  
   padding-left: 0px !important;
 }
 .video-content {
   width: 400px;
   height: 500px;
 }
-
+.final-img {
+  width: 100%;
+}
 // .key-pressed {
 //   transform: scale(0.95); 
 //   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
@@ -117,37 +119,6 @@ html body {
 }
 
 
-@media screen and (max-width: 767px) {
-  body {
-    font-size: 20px; /* Adjust font size for better mobile readability */
-  }
-
-  
-
-  .nav {
-    flex-direction: column; /* Stack navigation items vertically on mobile */
-  }
-
-  .nav-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-  }
-  
-
-  .nav-link {
-    font-size: 22px;
-
-  }
-
-  .btn {
-    font-size: 25px;
-  }
-  
-
-  /* Add any additional styles or adjustments you need for mobile here */
-}
-
 
 
 
@@ -166,14 +137,14 @@ html body {
   background-image: url(/images/1\ block_00000.png);
   background-size: cover;
   height: 100%;
+  background-repeat: no-repeat;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: [row1-start] 28% [row1-end]  auto [last-line];
   grid-template-areas:
     ". ."
     "contentBox .";
-
-
 }
 
 .intro2 {
@@ -192,6 +163,8 @@ html body {
   font-size: 20px;
   
 }
+
+
 .btn-second {
   border-radius: 10px;
   background-color: white;
@@ -241,10 +214,7 @@ html body {
   color: $pink;
 }
 
-.card-container {
-  gap: 80px;
- 
-}
+
 // .card-block {
 //   margin-right: 80px;
 
@@ -344,6 +314,34 @@ html body {
 
 
 @media screen and (max-width: 767px) {
+
+
+  body {
+    font-size: 20px; /* Adjust font size for better mobile readability */
+  }
+
+  
+
+  .nav {
+    flex-direction: column; /* Stack navigation items vertically on mobile */
+  }
+
+  .nav-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+  
+
+  .nav-link {
+    font-size: 22px;
+
+  }
+
+  .btn {
+    font-size: 25px;
+  }
+  
   .intro1 {
     background-size: 767px; /* Adjust background size for mobile */
     background-repeat: no-repeat;
@@ -627,3 +625,58 @@ html body {
     left: -10%;
   }
 }
+
+// @media screen and (max-width: 1200px) {
+//   .nav-link {
+//     font-size: 18px;
+ 
+//   }
+
+//   .intro1 {
+//     background-size: 100%; /* Adjust background size for mobile */
+//     background-repeat: no-repeat;
+//     height: 80%;
+//     grid-template-columns: repeat(5 ,1fr); /* Change grid layout to single column on mobile */
+//     grid-template-rows: [row1-start] 90% [row1-end] auto [last-line];
+//     grid-template-areas:
+    
+//     ". contentBox .";
+//     align-items: center;
+    
+//   }
+
+//   .intro2 {
+//     background-size: 100%;
+//     height: 80%;
+//     background-repeat: no-repeat;
+
+//   }
+//   .main-title {
+//     font-size: 70px;
+//   }
+//   .btn-second {
+//     font-size: 25px;
+//   }
+
+  
+//   .final-img {
+//     width: 100%;
+//     height: 100%;
+//   }
+  
+//   .stage1 {
+//     top: 10%;
+//     left: 0;
+//     right: 60%;
+//     bottom: 0;
+//     color: white;
+//   }
+
+//   .stage3 {
+//     top: 60%;
+//     left: 0;
+//     right: 55%;
+//     bottom: 0;
+//     color: white;
+//   }
+// }
